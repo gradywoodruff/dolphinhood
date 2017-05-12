@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+ 		<meta charset="utf-8"/>
+        {block:Description}<meta name="description" content="{MetaDescription}" />{/block:Description}
+        <title>{Title} {block:PostTitle} {PostTitle} {/block:PostTitle}</title>
+        <link rel="shortcut icon" href="{Favicon}">
+        <link rel="alternate" type="application/rss+xml" href="{RSS}">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+        <link href="https://dolphinhood.github.io/a/webfonts/ss-social-regular.css" rel="stylesheet" />
+        <link href="https://dolphinhood.github.io/a/webfonts/ss-standard.css" rel="stylesheet" />
+        <style type="text/css">
+	        @font-face { font-family: wet; font-weight: 100; src: url('https://dolphinhood.github.io/a/font/VeryHighSpeedTransport.otf'); }
+	        {CustomCSS}
+        </style>
+        <script src="https://code.jquery.com/jquery-latest.js"></script>
+        <script src="https://static.tumblr.com/cx0274f/jXKo6xby3/tether.min.js"></script>
+        <script src="https://static.tumblr.com/cx0274f/F71o6xaz0/b.js"></script>
+        <script src="https://static.tumblr.com/cx0274f/jC7o6xbxo/c.js"></script>
+        <script src="https://www.youtube.com/iframe_api"></script>
+
+    </head>
+    <body data-spy="scroll" data-target="#drops-spy" id="body-music">
+    <div class="top">
+
+		<div class="top-button">
+			<div class="pufferfish" style="background-image: url('https://static.tumblr.com/cx0274f/Hkwo6xdfx/pufferfish.png');" data-toggle="modal" data-target="#menuModal"></div>
+		</div>
+
+	</div><!-- /top -->
+
+	<!-- Modal -->
+	<div class="info-modal modal fade" id="menuModal" tabindex="-1" role="dialog" aria-labelledby="menuModal">
+		
+		<div class="info-modal modal-dialog" role="document">
+
+			<div class="pufferfish-x close" data-dismiss="modal">
+				<i class="ss-icon ss-standard">close</i>
+			</div>
+
+			<!-- Nav tabs -->
+			<ul class="nav nav-tabs" role="tablist">
+				<li class="nav-item">
+					<a class="nav-profile nav-link active" href="#profile" role="tab" data-toggle="tab">profile</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-contact nav-link" href="#contact" role="tab" data-toggle="tab">contact</a>
+				</li>
+				<li class="nav-item nav-dark">
+					<a class="nav-credits nav-link" href="#credits" role="tab" data-toggle="tab">credits</a>
+				</li>
+			</ul>
+
+			<!-- Tab panes -->
+			<div class="tab-content tab-content-boxes">
+
+				<div class="tab-pane fade in active" id="profile">
+
+					<div class="profile">
+
+						<div class="profile-description">
+
+							<div class="profile-message">
+
+								<h3>
+									{block:Description}
+									    {Description}
+									{/block:Description}
+								</h3>
+
+							</div>
+
+							<div class="social-message">
+
+				                <div class="social-apple-info">
+				                    <h2>Stream the albums</h2>
+				                </div>
+
+				                <div class="social-soundcloud-info">
+				                    <h2>Hear all the old music</h2>
+				                </div>
+
+				                <div class="social-youtube-info">
+				                    <h2>See all the vids</h2>
+				                </div>
+
+				                <div class="social-instagram-info">
+				                    <h2>Going hard on Instagram rn</h2>
+				                </div>
+
+				                <div class="social-vine-info">
+				                    <h2>6 second loops</h2>
+				                </div>
+
+				                <div class="social-twitter-info">
+				                    <h2>News and stuff</h2>
+				                </div>
+
+				                <div class="social-phone-info">
+				                    <h2>(323) 834-2938</h2>
+				                </div>
+
+				                <div class="social-more-info">
+				                    <h2>All the other links</h2>
+				                </div>
+
+							</div>
+
+						</div>
+
+						<div class="social">
+							<a href="https://itunes.apple.com/us/artist/dolphinhood/id1106758555" class="link-apple" target="_blank">
+								<i class="ss-icon ss-social-regular">apple</i>
+							</a>
+							<a href="https://www.youtube.com/user/DolphinhoodVideos/videos" class="link-youtube" target="_blank">
+								<i class="ss-icon ss-social-regular">youtube</i>
+							</a>
+							<a href="https://instagram.com/dolphinhood" class="link-instagram" target="_blank">
+								<i class="ss-icon ss-social-regular">instagram</i>
+							</a>
+							<a href="https://vine.co/dolphinhood" class="link-vine" target="_blank">
+								<i class="ss-icon ss-social-regular">vine</i>
+							</a>
+							<a href="https://twitter.com/dolphinhood" class="link-twitter" target="_blank">
+								<i class="ss-icon ss-social-regular">twitter</i>
+							</a>
+							<a href="tel:323-834-2938" class="link-phone nav-link">
+								<i class="ss-icon ss-standard">iphone</i>
+							</a>
+							<a href="#social" class="link-more nav-link nav-dark" data-toggle="tab">
+								<i class="ss-icon ss-standard">grid</i>
+							</a>
+						</div>
+
+					</div><!-- .profile -->
+
+				</div><!-- #profile -->
+
+				<div class="tab-pane fade" id="contact">
+
+					<div class="contact">
+
+						<div class="contact-description">
+
+							<div class="contact-message">
+
+								<h3 class="contact-press">Press-<br>
+								<a href="#">dolphinhoodpress@gmail.com</a>
+								</h3>
+								<h3 class="contact-booking">Booking-<br>
+								<a href="#">dolphinhooshows@gmail.com</a>
+								</h3>
+								<h3 class="contact-collab">Collab-<br>
+								<a href="#">jgradywoodruffiv@gmail.com</a>
+								</h3>
+
+							</div>
+
+						</div>
+
+					</div>
+
+				</div><!-- #contact -->
+
+				<div class="tab-pane fade" id="credits">
+
+					<div class="credits">
+						<div class="credits-window">
+
+							<div class="credits-pad"></div>
+
+							<h2>Dolphinhood</h2>
+							<h4>a music cartoon</h4>
+
+							<div class="credits-title">
+								created by
+							</div>
+
+							<div class="credits-name">
+								<a href="https://gradywoodruff.com" target="_blank">
+									Grady Woodruff
+								</a>
+							</div>
+							<div class="credits-extra">
+								&amp;
+							</div>
+							<div class="credits-name">
+								<a href="https://instagram.com/matwoodruff" target="_blank">
+									Mat Woodruff
+								</a>
+							</div>
+
+							<div class="credits-title">
+								developed by
+							</div>
+
+							<div class="credits-name">
+								<a href="https://gradywoodruff.com" target="_blank">
+									Grady Woodruff
+								</a>
+							</div>
+							<div class="credits-name">
+								<a href="https://instagram.com/matwoodruff" target="_blank">
+									Mat Woodruff
+								</a>
+							</div>
+							<div class="credits-name">
+								<a href="#" target="_blank">
+									Jimmy Astro
+								</a>
+							</div>
+							<div class="credits-name">
+								<a href="#" target="_blank">
+									Suzie Iris Lee
+								</a>
+							</div>
+							<div class="credits-name">
+								<a href="#" target="_blank">
+									Matt Buechele
+								</a>
+							</div>
+							<div class="credits-name">
+								<a href="#" target="_blank">
+									Andreina Velazquez
+								</a>
+							</div>
+
+							<div class="credits-title">
+								starring
+							</div>
+							<div class="credits-name">
+								<a href="#" target="_blank">
+									Jimmy Astro
+								</a>
+							</div>
+							<div class="credits-character">
+								as Milo Davis
+							</div>
+
+							<div class="credits-title">
+								starring
+							</div>
+							<div class="credits-name">
+								<a href="#" target="_blank">
+									Suzie Iris Lee
+								</a>
+							</div>
+							<div class="credits-character">
+								as Suzie Octopussy
+							</div>
+
+							<div class="credits-title">
+								starring
+							</div>
+							<div class="credits-name">
+								<a href="#" target="_blank">
+									Matt Buechele
+								</a>
+							</div>
+							<div class="credits-character">
+								as James Cameron
+							</div>
+
+							<div class="credits-title">
+								starring
+							</div>
+							<div class="credits-name">
+								<a href="#" target="_blank">
+									Andreina Velazquez
+								</a>
+							</div>
+							<div class="credits-character">
+								as Princess Andreina
+							</div>
+
+							<div class="credits-title">
+								animation
+							</div>
+
+							<div class="credits-name">
+								<a href="https://gradywoodruff.com" target="_blank">
+									Grady Woodruff
+								</a>
+							</div>
+
+							<div class="credits-title">
+								sound design
+							</div>
+
+							<div class="credits-name">
+								<a href="https://gradywoodruff.com" target="_blank">
+									Grady Woodruff
+								</a>
+							</div>
+
+							<div class="credits-title">
+								web development
+							</div>
+
+							<div class="credits-name">
+								<a href="https://gradywoodruff.com" target="_blank">
+									Grady Woodruff
+								</a>
+							</div>
+
+
+							<h2>Mercury</h2>
+							<h4>the debut dolphinhood album</h4>
+
+							<div class="credits-title">
+								written by
+							</div>
+
+							<div class="credits-name">
+								<a href="#" target="_blank">
+									Jimmy Astro
+								</a>
+							</div>
+							<div class="credits-extra">
+								&amp;
+							</div>
+							<div class="credits-name">
+								<a href="https://gradywoodruff" target="_blank">
+									Grady Woodruff
+								</a>
+							</div>
+
+							<div class="credits-title">
+								lyrics by
+							</div>
+
+							<div class="credits-name">
+								<a href="#" target="_blank">
+									Jimmy Astro
+								</a>
+							</div>
+
+							<div class="credits-title">
+								produced by
+							</div>
+
+							<div class="credits-name">
+								<a href="#" target="_blank">
+									Grady Woodruff
+								</a>
+							</div>
+
+							<div class="credits-title">
+								engineering, mixing &amp; mastering
+							</div>
+
+							<div class="credits-name">
+								<a href="#" target="_blank">
+									Grady Woodruff
+								</a>
+							</div>
+
+							<div class="credits-title">
+								artwork by
+							</div>
+
+							<div class="credits-name">
+								<a href="https://gradywoodruff.com" target="_blank">
+									Grady Woodruff
+								</a>
+							</div>
+							<div class="credits-extra">
+								&amp;
+							</div>
+							<div class="credits-name">
+								<a href="https://instagram.com/suzieirislee" target="_blank">
+									Suzie Iris Lee
+								</a>
+							</div>
+
+							<div class="credits-title">
+								art direction
+							</div>
+
+							<div class="credits-name">
+								<a href="#" target="_blank">
+									Suzie Iris Lee
+								</a>
+							</div>
+
+
+							<div class="credits-pad2"></div>
+
+								<a href="https://dolphinhood.com/novelty">
+									<div class="pufferfish" style="background-image: url('https://static.tumblr.com/cx0274f/Hkwo6xdfx/pufferfish.png');"></div>
+								</a>
+
+							<div class="credits-pad2"></div>
+
+							<div id="log-0">
+							</div>
+						</div>
+					</div><!-- .credits -->
+
+				</div><!-- #credits -->
+
+				<div class="tab-pane fade" id="social">
+
+					<div class="social-container">
+						<div class="social-boxes">
+					        <a class="link-pinterest" href="https://pinterest.com/dolphinhood" target="_blank">
+					            <div class="mobile-social-box link-pinterest">
+					                <div class="url-name">
+					                    <i class="ss-icon ss-social-regular">pinterest</i>
+					                </div>
+					            </div>
+					        </a>
+					        <a class="link-youtube" href="https://www.youtube.com/user/DolphinhoodVideos/videos" target="_blank">
+					            <div class="mobile-social-box link-youtube">
+					                <div class="url-name">
+					                    <i class="ss-icon ss-social-regular">youtube</i>
+					                </div>
+					            </div>
+					        </a>
+					        <a class="link-googleplus" href="https://plus.google.com/103545249323322968933" target="_blank">
+					            <div class="mobile-social-box link-google">
+					                <div class="url-name">
+					                    <i class="ss-icon ss-social-regular">googleplus</i>
+					                </div>
+					            </div>
+					        </a>
+					        <a class="link-apple" href="https://itunes.apple.com/us/artist/dolphinhood/id1106758555" target="_blank">
+					            <div class="mobile-social-box link-apple">
+					                <div class="url-name">
+					                    <i class="ss-icon ss-social-regular">apple</i>
+					                </div>
+					            </div>
+					        </a>
+					        <a class="link-soundcloud" href="https://soundcloud.com/dolphinhood1" target="_blank">
+					            <div class="mobile-social-box link-soundcloud">
+					                <div class="url-name">
+					                    <i class="ss-icon ss-social-regular">soundcloud</i>
+					                </div>
+					            </div>
+					        </a>
+					        <a class="link-play" href="https://play.google.com/store/music/artist/Dolphinhood?id=A6opjozbcjx6yry7guq3klx4ml4" target="_blank">
+					            <div class="mobile-social-box link-play">
+					                <div class="url-name">
+					                    <i class="ss-icon ss-social-regular">googleplay</i>
+					                </div>
+					            </div>
+					        </a>
+					        <a class="link-spotify" href="https://play.spotify.com/artist/5q5iD4OfO8Q0UceFItwdu3" target="_blank">
+					            <div class="mobile-social-box link-spotify">
+					                <div class="url-name">
+					                    <i class="ss-icon ss-social-regular">spotify</i>
+					                </div>
+					            </div>
+					        </a>
+					        <a class="link-vine" href="https://vine.co/dolphinhood" target="_blank">
+					            <div class="mobile-social-box link-vine">
+					                <div class="url-name">
+					                    <i class="ss-icon ss-social-regular">vine</i>
+					                </div>
+					            </div>
+					        </a>
+					        <a class="link-twitter" href="https://twitter.com/dolphinhood" target="_blank">
+					            <div class="mobile-social-box link-twitter">
+					                <div class="url-name">
+					                    <i class="ss-icon ss-social-regular">twitter</i>
+					                </div>
+					            </div>
+					        </a>
+					        <a class="link-instagram" href="https://instagram.com/dolphinhood" target="_blank">
+					            <div class="mobile-social-box link-instagram">
+					                <div class="url-name">
+					                    <i class="ss-icon ss-social-regular">instagram</i>
+					                </div>
+					            </div>
+					        </a>
+					        <a class="link-facebook" href="https://www.facebook.com/dolphinhood" target="_blank">
+					            <div class="mobile-social-box link-facebook">
+					                <div class="url-name">
+					                    <i class="ss-icon ss-social-regular">facebook</i>
+					                </div>
+					            </div>
+					        </a>
+					        <a class="link-github" href="https://www.github.com/dolphinhood" target="_blank">
+					            <div class="mobile-social-box link-github">
+					                <div class="url-name">
+					                    <i class="ss-icon ss-social-regular">github</i>
+					                </div>
+					            </div>
+					        </a>
+					        <a class="link-phone" href="tel:323-834-2938" target="_blank">
+					            <div class="mobile-social-box link-phone">
+					                <div class="url-name">
+					                    <i class="ss-icon ss-standard">iphone</i>
+					                </div>
+					            </div>
+					        </a>
+						</div>
+					</div>
+				</div><!-- #social -->
+
+			</div><!-- content -->
+
+		</div><!--info-modal dialog-->
+
+	</div><!-- /info-modal -->	
+
+	<div id="content">
+		<div class="half-block" style="background-image:url('http://static.tumblr.com/cx0274f/3cKo74udu/mercury-back.gif');">
+			<div class="container">
+				<div class="album album-mercury">
+					<div class="album-art">
+
+						<ul class="nav nav-music" role="tablist">
+							<li class="nav-item">
+								<a class="nav-profile nav-link" href="#mercury-apple_tab" role="tab" data-toggle="tab">
+									<i class="ss-icon ss-social-regular">apple</i>
+								</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-contact nav-link" href="#mercury-spotify_tab" role="tab" data-toggle="tab">
+									<i class="ss-icon ss-social-regular">spotify</i>
+								</a>
+							</li>
+							<li class="nav-item nav-dark">
+								<a class="nav-credits nav-link" href="#mercury-soundcloud_tab" role="tab" data-toggle="tab">
+									<i class="ss-icon ss-social-regular">soundcloud</i>
+								</a>
+							</li>
+						</ul>
+
+					</div>
+					<div class="album-info">
+
+						<div class="tab-content">
+
+							<div class="tab-pane fade in active" id="mercury-info_tab">
+
+								<div class="album-title">
+									Mercury
+								</div>
+								<div class="album-subtitle">
+									the debut Dolphinhood album
+								</div>
+
+							</div>
+
+							<div class="tab-pane fade in" id="mercury-apple_tab">
+
+								<iframe src="//tools.applemusic.com/embed/v1/album/1106757855?country=us" height="720px" width="100%" frameborder="0"></iframe>	
+
+							</div>
+
+							<div class="tab-pane fade in" id="mercury-spotify_tab">
+
+							</div>
+
+							<div class="tab-pane fade in" id="mercury-soundcloud_tab">
+
+							</div>
+
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<div class="half-block" style="background-image:url('http://static.tumblr.com/cx0274f/zoHo74ud9/static.gif');">
+			<div class="container">
+				<div class="album album-sealevel">
+					<div class="album-art">
+						<img src="http://static.tumblr.com/cx0274f/j7Jo73h1m/sealevel_front-x1000.jpg" width="100%">
+					</div>
+					<div class="album-info">
+						<iframe src="//tools.applemusic.com/embed/v1/album/1106757855?country=us" height="500px" width="100%" frameborder="0"></iframe>	
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="foot">
+
+		<div class="foot-container">
+
+		<nav id="drops-spy" class="navbar pages-spy">
+			<ul class="nav drops" role="tablist">
+				<li id="foot-link" class="drop nav-item">
+					<div class="drop-drop">
+						<a class="nav-link" href="#foot">
+							<div class="drop-title">
+								pages
+							</div>
+							<div class="drop-drop">
+								<i class="ss-icon ss-standard">plus</i>
+							</div>
+						</a>
+					</div>
+				</li>
+			</ul>
+		</nav>
+
+			<div id="archives">
+
+				<div class="foot-title">
+					Pages
+				</div>
+
+				<div class="menu-archives-container">
+
+					<ul id="menu-archives" class="menu">
+						<li class="menu-item menu-item-featured">
+							<a href="/featured">/featured</a>
+						</li>
+						<li class="menu-item menu-item-music">
+							<a href="/music">/music</a>
+						</li>
+						<li class="menu-item menu-item-video">
+							<a href="/video">/video</a>
+						</li>
+						<li class="menu-item menu-item-characters">
+							<a href="/characters">/characters</a>
+						</li>
+						<li class="menu-item menu-item-photos">
+							<a href="/photos">/photos</a>
+						</li>
+						<li class="menu-item menu-item-social">
+							<a href="/social">/social</a>
+						</li>
+						<li class="menu-item">
+							<a href="/archive">/archive</a>
+						</li>
+					</ul>
+
+				</div>
+
+				<div class="search-button" data-toggle="modal" data-target="#searchModal">
+        			
+					<i class="ss-icon ss-standard">search</i>Search all
+				</div>
+
+			</div><!-- /archives -->
+		</div><!-- /foot-container -->
+	</div><!--/ .foot -->
+
+	<div class="search-modal modal fade" id="searchModal" tabindex="0" role="dialog" aria-labelledby="searchModal">
+		
+		<div class="search-modal modal-dialog" role="document">
+
+			<div class="search-x close" data-dismiss="modal">
+				<i class="ss-icon ss-standard">close</i>
+			</div>
+
+			<div class="tab-content tab-content-boxes">
+
+				<div class="footer-search">
+
+					<div class="search-instructions">
+						Search all
+					</div>
+
+					<form action="/search" role="search" method="get" id="searchform" class="searchform" autocomplete="off">
+
+				        <button class="ss-search" type="submit" id="searchsubmit" value="search"></button>
+				        <input type="text" name="q" id="s" value="{SearchQuery}"/>
+
+					</form>
+
+				</div>
+
+			</div>
+
+		</div>
+		
+	</div><!--/search-modal-->
+    </body>
+</html>

@@ -1,0 +1,1480 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+ 		<meta charset="utf-8"/>
+        {block:Description}<meta name="description" content="{MetaDescription}" />{/block:Description}
+        <title>{Title} {block:PostTitle} {PostTitle} {/block:PostTitle}</title>
+        <link rel="shortcut icon" href="{Favicon}">
+        <link rel="alternate" type="application/rss+xml" href="{RSS}">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+        <link href="https://dolphinhood.github.io/a/webfonts/ss-social-regular.css" rel="stylesheet" />
+        <link href="https://dolphinhood.github.io/a/webfonts/ss-standard.css" rel="stylesheet" />
+        <style type="text/css">
+	        @font-face { font-family: wet; font-weight: 100; src: url('https://dolphinhood.github.io/a/font/VeryHighSpeedTransport.otf'); }
+	        {CustomCSS}
+        </style>
+        <link href="http://static.tumblr.com/cx0274f/4zFo76n6z/r.css" rel="stylesheet" />
+        <script src="https://code.jquery.com/jquery-latest.js"></script>
+        <script src="https://static.tumblr.com/cx0274f/jXKo6xby3/tether.min.js"></script>
+        <script src="https://static.tumblr.com/cx0274f/F71o6xaz0/b.js"></script>
+        <script src="https://static.tumblr.com/cx0274f/jC7o6xbxo/c.js"></script>
+        <script src="https://www.youtube.com/iframe_api"></script>
+
+    </head>
+    <body data-spy="scroll" data-target="#drops-spy" {block:TagPage} id="body-{URLSafeTag}" class="tag_page" {/block:TagPage}{block:PermalinkPage} class="perma_page" {/block:PermalinkPage}{block:SearchPage} class="search_page" {/block:SearchPage}>
+    <div class="top">
+
+		<div class="top-button">
+			<div class="pufferfish" style="background-image: url('https://static.tumblr.com/cx0274f/Hkwo6xdfx/pufferfish.png');" data-toggle="modal" data-target="#menuModal"></div>
+		</div>
+
+	</div><!-- /top -->
+
+	<!-- Modal -->
+	<div class="info-modal modal fade" id="menuModal" tabindex="-1" role="dialog" aria-labelledby="menuModal">
+		
+		<div class="info-modal modal-dialog" role="document">
+
+			<div class="pufferfish-x close" data-dismiss="modal">
+				<i class="ss-icon ss-standard">close</i>
+			</div>
+
+			<!-- Nav tabs -->
+			<ul class="nav nav-tabs" role="tablist">
+				<li class="nav-item">
+					<a class="nav-profile nav-link active" href="#profile" role="tab" data-toggle="tab">profile</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-contact nav-link" href="#contact" role="tab" data-toggle="tab">contact</a>
+				</li>
+				<li class="nav-item nav-dark">
+					<a class="nav-credits nav-link" href="#credits" role="tab" data-toggle="tab">credits</a>
+				</li>
+			</ul>
+
+			<!-- Tab panes -->
+			<div class="tab-content tab-content-boxes">
+
+				<div class="tab-pane fade in active" id="profile">
+
+					<div class="profile">
+
+						<div class="profile-description">
+
+							<div class="profile-message">
+
+								<h3>
+									{block:Description}
+									    {Description}
+									{/block:Description}
+								</h3>
+
+							</div>
+
+							<div class="social-message">
+
+				                <div class="social-apple-info">
+				                    <h2>Stream the albums</h2>
+				                </div>
+
+				                <div class="social-soundcloud-info">
+				                    <h2>Hear all the old music</h2>
+				                </div>
+
+				                <div class="social-youtube-info">
+				                    <h2>See all the vids</h2>
+				                </div>
+
+				                <div class="social-instagram-info">
+				                    <h2>Going hard on Instagram rn</h2>
+				                </div>
+
+				                <div class="social-vine-info">
+				                    <h2>6 second loops</h2>
+				                </div>
+
+				                <div class="social-twitter-info">
+				                    <h2>News and stuff</h2>
+				                </div>
+
+				                <div class="social-phone-info">
+				                    <h2>(323) 834-2938</h2>
+				                </div>
+
+				                <div class="social-more-info">
+				                    <h2>All the other links</h2>
+				                </div>
+
+							</div>
+
+						</div>
+
+						<div class="social">
+							<a href="https://itunes.apple.com/us/artist/dolphinhood/id1106758555" class="link-apple" target="_blank">
+								<i class="ss-icon ss-social-regular">apple</i>
+							</a>
+							<a href="https://www.youtube.com/user/DolphinhoodVideos/videos" class="link-youtube" target="_blank">
+								<i class="ss-icon ss-social-regular">youtube</i>
+							</a>
+							<a href="https://instagram.com/dolphinhood" class="link-instagram" target="_blank">
+								<i class="ss-icon ss-social-regular">instagram</i>
+							</a>
+							<a href="https://vine.co/dolphinhood" class="link-vine" target="_blank">
+								<i class="ss-icon ss-social-regular">vine</i>
+							</a>
+							<a href="https://twitter.com/dolphinhood" class="link-twitter" target="_blank">
+								<i class="ss-icon ss-social-regular">twitter</i>
+							</a>
+							<a href="tel:323-834-2938" class="link-phone nav-link">
+								<i class="ss-icon ss-standard">iphone</i>
+							</a>
+							<a href="#social" class="link-more nav-link nav-dark" data-toggle="tab">
+								<i class="ss-icon ss-standard">grid</i>
+							</a>
+						</div>
+
+					</div><!-- .profile -->
+
+				</div><!-- #profile -->
+
+				<div class="tab-pane fade" id="contact">
+
+					<div class="contact">
+
+						<div class="contact-description">
+
+							<div class="contact-message">
+
+								<h3 class="contact-press">Press-<br>
+								<a href="#">dolphinhoodpress@gmail.com</a>
+								</h3>
+								<h3 class="contact-booking">Booking-<br>
+								<a href="#">dolphinhooshows@gmail.com</a>
+								</h3>
+								<h3 class="contact-collab">Collab-<br>
+								<a href="#">jgradywoodruffiv@gmail.com</a>
+								</h3>
+
+							</div>
+
+						</div>
+
+					</div>
+
+				</div><!-- #contact -->
+
+				<div class="tab-pane fade" id="credits">
+
+					<div class="credits">
+						<div class="credits-window">
+
+							<div class="credits-pad"></div>
+
+							<h2>Dolphinhood</h2>
+							<h4>a music cartoon</h4>
+
+							<div class="credits-title">
+								created by
+							</div>
+
+							<div class="credits-name">
+								<a href="https://gradywoodruff.com" target="_blank">
+									Grady Woodruff
+								</a>
+							</div>
+							<div class="credits-extra">
+								&amp;
+							</div>
+							<div class="credits-name">
+								<a href="https://instagram.com/matwoodruff" target="_blank">
+									Mat Woodruff
+								</a>
+							</div>
+
+							<div class="credits-title">
+								developed by
+							</div>
+
+							<div class="credits-name">
+								<a href="https://gradywoodruff.com" target="_blank">
+									Grady Woodruff
+								</a>
+							</div>
+							<div class="credits-name">
+								<a href="https://instagram.com/matwoodruff" target="_blank">
+									Mat Woodruff
+								</a>
+							</div>
+							<div class="credits-name">
+								<a href="#" target="_blank">
+									Jimmy Astro
+								</a>
+							</div>
+							<div class="credits-name">
+								<a href="#" target="_blank">
+									Suzie Iris Lee
+								</a>
+							</div>
+							<div class="credits-name">
+								<a href="#" target="_blank">
+									Matt Buechele
+								</a>
+							</div>
+							<div class="credits-name">
+								<a href="#" target="_blank">
+									Andreina Velazquez
+								</a>
+							</div>
+
+							<div class="credits-title">
+								starring
+							</div>
+							<div class="credits-name">
+								<a href="#" target="_blank">
+									Jimmy Astro
+								</a>
+							</div>
+							<div class="credits-character">
+								as Milo Davis
+							</div>
+
+							<div class="credits-title">
+								starring
+							</div>
+							<div class="credits-name">
+								<a href="#" target="_blank">
+									Suzie Iris Lee
+								</a>
+							</div>
+							<div class="credits-character">
+								as Suzie Octopussy
+							</div>
+
+							<div class="credits-title">
+								starring
+							</div>
+							<div class="credits-name">
+								<a href="#" target="_blank">
+									Matt Buechele
+								</a>
+							</div>
+							<div class="credits-character">
+								as James Cameron
+							</div>
+
+							<div class="credits-title">
+								starring
+							</div>
+							<div class="credits-name">
+								<a href="#" target="_blank">
+									Andreina Velazquez
+								</a>
+							</div>
+							<div class="credits-character">
+								as Princess Andreina
+							</div>
+
+							<div class="credits-title">
+								animation
+							</div>
+
+							<div class="credits-name">
+								<a href="https://gradywoodruff.com" target="_blank">
+									Grady Woodruff
+								</a>
+							</div>
+
+							<div class="credits-title">
+								sound design
+							</div>
+
+							<div class="credits-name">
+								<a href="https://gradywoodruff.com" target="_blank">
+									Grady Woodruff
+								</a>
+							</div>
+
+							<div class="credits-title">
+								web development
+							</div>
+
+							<div class="credits-name">
+								<a href="https://gradywoodruff.com" target="_blank">
+									Grady Woodruff
+								</a>
+							</div>
+
+
+							<h2>Mercury</h2>
+							<h4>the debut dolphinhood album</h4>
+
+							<div class="credits-title">
+								written by
+							</div>
+
+							<div class="credits-name">
+								<a href="#" target="_blank">
+									Jimmy Astro
+								</a>
+							</div>
+							<div class="credits-extra">
+								&amp;
+							</div>
+							<div class="credits-name">
+								<a href="https://gradywoodruff" target="_blank">
+									Grady Woodruff
+								</a>
+							</div>
+
+							<div class="credits-title">
+								lyrics by
+							</div>
+
+							<div class="credits-name">
+								<a href="#" target="_blank">
+									Jimmy Astro
+								</a>
+							</div>
+
+							<div class="credits-title">
+								produced by
+							</div>
+
+							<div class="credits-name">
+								<a href="#" target="_blank">
+									Grady Woodruff
+								</a>
+							</div>
+
+							<div class="credits-title">
+								engineering, mixing &amp; mastering
+							</div>
+
+							<div class="credits-name">
+								<a href="#" target="_blank">
+									Grady Woodruff
+								</a>
+							</div>
+
+							<div class="credits-title">
+								artwork by
+							</div>
+
+							<div class="credits-name">
+								<a href="https://gradywoodruff.com" target="_blank">
+									Grady Woodruff
+								</a>
+							</div>
+							<div class="credits-extra">
+								&amp;
+							</div>
+							<div class="credits-name">
+								<a href="https://instagram.com/suzieirislee" target="_blank">
+									Suzie Iris Lee
+								</a>
+							</div>
+
+							<div class="credits-title">
+								art direction
+							</div>
+
+							<div class="credits-name">
+								<a href="#" target="_blank">
+									Suzie Iris Lee
+								</a>
+							</div>
+
+
+							<div class="credits-pad2"></div>
+
+								<a href="https://dolphinhood.com/novelty">
+									<div class="pufferfish" style="background-image: url('https://static.tumblr.com/cx0274f/Hkwo6xdfx/pufferfish.png');"></div>
+								</a>
+
+							<div class="credits-pad2"></div>
+
+							<div id="log-0">
+							</div>
+						</div>
+					</div><!-- .credits -->
+
+				</div><!-- #credits -->
+
+				<div class="tab-pane fade" id="social">
+
+					<div class="social-container">
+						<div class="social-boxes">
+					        <a class="link-pinterest" href="https://pinterest.com/dolphinhood" target="_blank">
+					            <div class="mobile-social-box link-pinterest">
+					                <div class="url-name">
+					                    <i class="ss-icon ss-social-regular">pinterest</i>
+					                </div>
+					            </div>
+					        </a>
+					        <a class="link-youtube" href="https://www.youtube.com/user/DolphinhoodVideos/videos" target="_blank">
+					            <div class="mobile-social-box link-youtube">
+					                <div class="url-name">
+					                    <i class="ss-icon ss-social-regular">youtube</i>
+					                </div>
+					            </div>
+					        </a>
+					        <a class="link-googleplus" href="https://plus.google.com/103545249323322968933" target="_blank">
+					            <div class="mobile-social-box link-google">
+					                <div class="url-name">
+					                    <i class="ss-icon ss-social-regular">googleplus</i>
+					                </div>
+					            </div>
+					        </a>
+					        <a class="link-apple" href="https://itunes.apple.com/us/artist/dolphinhood/id1106758555" target="_blank">
+					            <div class="mobile-social-box link-apple">
+					                <div class="url-name">
+					                    <i class="ss-icon ss-social-regular">apple</i>
+					                </div>
+					            </div>
+					        </a>
+					        <a class="link-soundcloud" href="https://soundcloud.com/dolphinhood1" target="_blank">
+					            <div class="mobile-social-box link-soundcloud">
+					                <div class="url-name">
+					                    <i class="ss-icon ss-social-regular">soundcloud</i>
+					                </div>
+					            </div>
+					        </a>
+					        <a class="link-play" href="https://play.google.com/store/music/artist/Dolphinhood?id=A6opjozbcjx6yry7guq3klx4ml4" target="_blank">
+					            <div class="mobile-social-box link-play">
+					                <div class="url-name">
+					                    <i class="ss-icon ss-social-regular">googleplay</i>
+					                </div>
+					            </div>
+					        </a>
+					        <a class="link-spotify" href="https://play.spotify.com/artist/5q5iD4OfO8Q0UceFItwdu3" target="_blank">
+					            <div class="mobile-social-box link-spotify">
+					                <div class="url-name">
+					                    <i class="ss-icon ss-social-regular">spotify</i>
+					                </div>
+					            </div>
+					        </a>
+					        <a class="link-vine" href="https://vine.co/dolphinhood" target="_blank">
+					            <div class="mobile-social-box link-vine">
+					                <div class="url-name">
+					                    <i class="ss-icon ss-social-regular">vine</i>
+					                </div>
+					            </div>
+					        </a>
+					        <a class="link-twitter" href="https://twitter.com/dolphinhood" target="_blank">
+					            <div class="mobile-social-box link-twitter">
+					                <div class="url-name">
+					                    <i class="ss-icon ss-social-regular">twitter</i>
+					                </div>
+					            </div>
+					        </a>
+					        <a class="link-instagram" href="https://instagram.com/dolphinhood" target="_blank">
+					            <div class="mobile-social-box link-instagram">
+					                <div class="url-name">
+					                    <i class="ss-icon ss-social-regular">instagram</i>
+					                </div>
+					            </div>
+					        </a>
+					        <a class="link-facebook" href="https://www.facebook.com/dolphinhood" target="_blank">
+					            <div class="mobile-social-box link-facebook">
+					                <div class="url-name">
+					                    <i class="ss-icon ss-social-regular">facebook</i>
+					                </div>
+					            </div>
+					        </a>
+					        <a class="link-github" href="https://www.github.com/dolphinhood" target="_blank">
+					            <div class="mobile-social-box link-github">
+					                <div class="url-name">
+					                    <i class="ss-icon ss-social-regular">github</i>
+					                </div>
+					            </div>
+					        </a>
+					        <a class="link-phone" href="tel:323-834-2938" target="_blank">
+					            <div class="mobile-social-box link-phone">
+					                <div class="url-name">
+					                    <i class="ss-icon ss-standard">iphone</i>
+					                </div>
+					            </div>
+					        </a>
+						</div>
+					</div>
+				</div><!-- #social -->
+
+			</div><!-- content -->
+
+		</div><!--info-modal dialog-->
+
+	</div><!-- /info-modal -->	
+		
+<!-- tumblr paste -->
+	{block:IndexPage}
+		<div id="featured-content">
+
+			<!-- content -->
+			<div id="mercury" class="post">
+
+				<div class="block" style="background-image:url('https://static.tumblr.com/cx0274f/vr0o6xhrr/mercury1.jpg');">
+
+				</div>
+
+				<div class="block" style="background-image:url('https://static.tumblr.com/cx0274f/sppo6xhs1/mercury2.jpg');">
+
+					<div class="drop_container-blurb_r">
+						
+			  			<div class="post-text v-c blurb_r">
+
+		  					<p>
+		  						Alright so Dolphinhood has been working on a new album. We kinda got dark on this one. The songs are weirdly balanced between articulate and abrasive. 
+		  					</p>
+
+		  					<p>
+		  						Eleven brand new songs will be available on June 13 
+	  						</p>
+
+						</div>
+
+					</div>
+
+				</div>
+
+				<div class="block" style="background-image:url('https://static.tumblr.com/cx0274f/SrWo6xhsk/mercury3.jpg');">
+
+				</div>
+
+				<div class="block" style="background-image:url('https://static.tumblr.com/cx0274f/Xofo6xhvw/mercury4.jpg');">
+
+					<div class="drop_container-blurb_c">
+						
+			  			<div class="post-text v-c blurb_c">
+
+			  				Listen to the new single, Benefits
+
+							<div class="drop-links">
+								<a href=" $$$ apple-link $$$ " target="_blank">
+									<i class="ss-icon ss-social-regular">apple</i>
+								</a>
+
+								<a href=" $$$ spotify-link $$$" target="_blank">
+									<i class="ss-icon ss-social-regular">spotify</i>
+								</a>
+
+								<a href=" $$$ soundcloud-link $$$" target="_blank">
+									<i class="ss-icon ss-social-regular">soundcloud</i>
+								</a>
+							</div>
+
+						</div>
+
+					</div>
+
+				</div>
+
+			</div><!--#mercury-->
+
+			<div id="attention" class="post">
+
+				<div class="block" style="background-image:url('https://static.tumblr.com/cx0274f/Yqeo6xid6/attention1.jpg');">
+
+					<div class="drop_container-blurb_c">
+						
+			  			<div class="post-text v-c blurb_c">
+
+		  					All I Ever Wanted Was To Be Famous...
+
+						</div>
+
+					</div>
+
+				</div>
+
+				<div class="block" style="background-image:url('https://static.tumblr.com/cx0274f/h1Io6xidl/attention2.jpg');">
+
+					<div class="drop_container-blurb_r">
+						
+			  			<div class="post-text v-c blurb_r">
+
+		  					But Nobody Could Hear Me...
+
+						</div>
+
+					</div>
+
+				</div>
+
+				<div class="block" style="background-image:url('https://static.tumblr.com/cx0274f/xeYo6xidw/attention3.jpg');">
+
+					<div class="drop_container-blurb_c">
+						
+			  			<div class="post-text v-c blurb_c">
+
+							<div class="blurb-play">
+								<div class="play-title">
+									Attention
+								</div>
+								
+								<a class="blurb-link" href="https://dolphinhood.tumblr.com/post/144326006776">
+									<div class="play-button">
+										<i class="ss-icon ss-standard">play</i>
+									</div>
+								</a>
+
+								<div class="play-subtitle">
+									Dolphinhood is back 
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+
+				</div>
+
+			</div><!--#attention-->
+
+			<div id="lockedup" class="post">
+
+				<div class="block" style="background-image:url('http://static.tumblr.com/cx0274f/V2co734mb/lockedup2-1.jpg');">
+
+					<div class="drop_container-blurb_r">
+						
+			  			<div class="post-text v-c blurb_r">
+
+		  					One time Dolphinhood performed in the Red Sea, but not all the creatures got the invite.
+
+						</div>
+
+					</div>
+
+				</div>
+
+				<div class="block" style="background-image:url('http://static.tumblr.com/cx0274f/M5Uo734nf/lockedup2-2.jpg');">
+
+					<div class="drop_container-blurb_c">
+						
+			  			<div class="post-text v-c blurb_c">
+
+							<div class="blurb-play">
+								<div class="play-title">
+									Locked Up
+								</div>
+								
+								<a class="blurb-link" data-toggle="modal" data-target="#lockedupModal">
+									<div class="play-button">
+										<i class="ss-icon ss-standard">play</i>
+									</div>
+								</a>
+
+								<div class="play-subtitle">
+									Watch the new 360degree video
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+
+				</div>
+
+			</div><!--#lockedup-->
+
+			<nav id="drops-spy" class="navbar">
+				<ul class="nav drops" role="tablist">
+
+						<li id="mercury-link" class="drop nav-item">
+							<a class="nav-link" href="#mercury">
+								<div class="drop-title drop-white">
+									Mercury
+								</div>
+								<div class="drop-title" style="color:#d69d64;">
+									Mercury
+								</div>
+								<div class="drop-drop">
+									<i class="ss-icon ss-standard drop-white" style="color:#fff">drop</i>
+									<i class="ss-icon ss-standard" style="color:#d69d64;">drop</i>
+								</div>
+							</a>
+						</li>
+						<li id="attention-link" class="drop nav-item">
+							<a class="nav-link" href="#attention">
+								<div class="drop-title drop-white">
+									Attention
+								</div>
+								<div class="drop-title" style="color:#ff9900;">
+									Attention
+								</div>
+								<div class="drop-drop">
+									<i class="ss-icon ss-standard drop-white" style="color:#fff">drop</i>
+									<i class="ss-icon ss-standard" style="color:#ff9900;">drop</i>
+								</div>
+							</a>
+						</li>
+						<li id="lockedup-link" class="drop nav-item">
+							<a class="nav-link" href="#lockedup">
+								<div class="drop-title drop-white">
+									Locked Up
+								</div>
+								<div class="drop-title" style="color:#4e71c4;">
+									Locked Up
+								</div>
+								<div class="drop-drop">
+									<i class="ss-icon ss-standard drop-white" style="color:#fff">drop</i>
+									<i class="ss-icon ss-standard" style="color:#4e71c4;">drop</i>
+								</div>
+							</a>
+						</li>
+
+					<li id="foot-link" class="drop nav-item">
+						<div class="drop-drop">
+							<a class="nav-link" href="#foot">
+								<div class="drop-title">
+									pages
+								</div>
+								<div class="drop-drop">
+									<i class="ss-icon ss-standard">plus</i>
+								</div>
+							</a>
+						</div>
+					</li>
+
+				</ul> <!--/ .drops -->
+			</nav>
+
+		</div><!-- /featured-content -->
+
+	{/block:IndexPage}
+
+	{block:PermalinkPage}
+	        
+	    <div id=“content”>
+	        {block:Posts}
+	    
+	            {block:Text}
+		    
+		    		<div class="container page-container">
+		                
+		                <div id="post-{postID}" class="post post-text" data-tags="{TagsAsClasses}">
+		                    {block:Title}
+		                        <h3>
+		                            <a href="{Permalink}">{Title}</a>
+		                        </h3>
+		                    {/block:Title}
+		                    <div class="body-text">{Body}</div>
+			               	<ul class="like-reblog">
+			                    <li class="like_icon">{LikeButton}</li>
+			                    <li class="reblog_icon">{ReblogButton}</li>
+			                    <li class="notescount">
+			                        {block:NoteCount}
+			                            <a href="{Permalink}#notes">{NoteCountWithLabel}</a>
+			                        {/block:NoteCount}
+			                    </li>
+			                </ul>
+		                </div> 
+		                
+	                </div>
+	            {/block:Text}
+	            
+	            {block:Photo}
+	                <div id="post-{postID}" class="post post-photo" data-tags="{TagsAsClasses}">
+	                    {LinkOpenTag}
+	                        <img src="{PhotoURL-HighRes}" alt="Photo" />
+	                    {LinkCloseTag}
+
+	                    {block:Caption}
+	                        <p>{Caption}</p>
+	                    {/block:Caption}
+	                </div>
+	            
+		            <div class="bottom">    
+		               <ul class="like-reblog">
+		                    <li class="like_icon">{LikeButton}</li>
+		                    <li>{ReblogButton}</li>
+		                    <li class="notescount">
+		                        {block:NoteCount}
+		                            <a href="{Permalink}#notes">{NoteCountWithLabel}</a>
+		                        {/block:NoteCount}
+		                    </li>
+		                </ul>
+		            </div>
+	            {/block:Photo}
+
+	            {block:Panorama}
+	                <div id="post-{postID}" class="post panorama" data-tags="{TagsAsClasses}">
+	                    {LinkOpenTag}
+	                        <img src="{PhotoURL-Panorama}" alt="{PhotoAlt}"/>
+	                    {LinkCloseTag}{block:Caption}
+	                        <p>{Caption}</p>
+	                    {/block:Caption}
+	                </div>
+	            
+		            <div class="bottom">    
+		               <ul class="like-reblog">
+		                    <li class="like_icon">{LikeButton}</li>
+		                    <li>{ReblogButton}</li>
+		                    <li class="notescount">
+		                        {block:NoteCount}
+		                            <a href="{Permalink}#notes">{NoteCountWithLabel}</a>
+		                        {/block:NoteCount}
+		                    </li>
+		                </ul>
+		            </div>
+	            {/block:Panorama}
+
+	            {block:Photoset}
+	                 <div id="post-{postID}" class="post post-photoset" data-tags="{TagsAsClasses}">
+	                    {block:Photos}
+	                        <img src="{PhotoURL-HighRes}" alt="Photo" width="{PhotoWidth-700}" height="{PhotoHeight-700}" />
+	                    {/block:Photos}
+
+	                    {block:Caption}
+	                        <p>{Caption}</p>
+	                    {/block:Caption}
+	                </div>
+	            
+		            <div class="bottom">    
+		               <ul class="like-reblog">
+		                    <li class="like_icon">{LikeButton}</li>
+		                    <li>{ReblogButton}</li>
+		                    <li class="notescount">
+		                        {block:NoteCount}
+		                            <a href="{Permalink}#notes">{NoteCountWithLabel}</a>
+		                        {/block:NoteCount}
+		                    </li>
+		                </ul>
+		            </div>
+	            {/block:Photoset}
+
+	            {block:Quote}
+	                <div id="post-{postID}" class="post post-quote" data-tags="{TagsAsClasses}">
+	                    <h3 class="quote">{Quote}</h3>
+
+	                    {block:Source}
+	                        <cite class="source"> &mdash; {Source} </cite>
+	                    {/block:Source}
+	                </div>
+	            
+		            <div class="bottom">    
+		               <ul class="like-reblog">
+		                    <li class="like_icon">{LikeButton}</li>
+		                    <li>{ReblogButton}</li>
+		                    <li class="notescount">
+		                        {block:NoteCount}
+		                            <a href="{Permalink}#notes">{NoteCountWithLabel}</a>
+		                        {/block:NoteCount}
+		                    </li>
+		                </ul>
+		            </div>
+	            {/block:Quote}
+
+	            {block:Link}
+	                <div id="post-{postID}" class="post post-link" data-tags="{TagsAsClasses}">
+	                    <a class="link" href="{URL}" {Target}>{Name}</a>
+	                    {block:Description}
+	                        {Description}
+	                    {/block:Description}
+	                </div>
+	            
+		            <div class="bottom">    
+		               <ul class="like-reblog">
+		                    <li class="like_icon">{LikeButton}</li>
+		                    <li>{ReblogButton}</li>
+		                    <li class="notescount">
+		                        {block:NoteCount}
+		                            <a href="{Permalink}#notes">{NoteCountWithLabel}</a>
+		                        {/block:NoteCount}
+		                    </li>
+		                </ul>
+		            </div>
+	            {/block:Link}
+
+	            {block:Chat}
+	                <div id="post-{postID}" class="post post-chat" data-tags="{TagsAsClasses}">
+	                    <h3>{block:Title}{Title}{/block:Title}</h3>
+	                    <ul class="chat">
+	                        {block:Lines}
+	                            <li class="{Alt}">
+	                                <p>{block:Label}<strong>{Label}</strong>{/block:Label} {Line} </p>
+	                            </li>
+	                        {/block:Lines}
+	                    </ul>
+	                </div>
+	            
+		            <div class="bottom">    
+		               <ul class="like-reblog">
+		                    <li class="like_icon">{LikeButton}</li>
+		                    <li>{ReblogButton}</li>
+		                    <li class="notescount">
+		                        {block:NoteCount}
+		                            <a href="{Permalink}#notes">{NoteCountWithLabel}</a>
+		                        {/block:NoteCount}
+		                    </li>
+		                </ul>
+		            </div>
+	            {/block:Chat}
+
+	            {block:Audio}
+	                <div id="post-{postID}" class="post post-music" data-tags="{TagsAsClasses}">
+	                    {AudioPlayer}
+	                    <div class="body-text">{block:Caption}{Caption}{/block:Caption}</div>
+	                </div>
+	            
+		            <div class="bottom">    
+		               <ul class="like-reblog">
+		                    <li class="like_icon">{LikeButton}</li>
+		                    <li>{ReblogButton}</li>
+		                    <li class="notescount">
+		                        {block:NoteCount}
+		                            <a href="{Permalink}#notes">{NoteCountWithLabel}</a>
+		                        {/block:NoteCount}
+		                    </li>
+		                </ul>
+		            </div>
+	            {/block:Audio}
+
+	            {block:Video}
+	                <div id="post-{postID}" class="post post-video {TagsAsClasses}" data-tags="{TagsAsClasses}">
+	                    <div class="media">{Video-700}</div>
+	                    {block:Caption}{Caption}{/block:Caption}
+		               	<ul class="like-reblog">
+		                    <li class="like_icon">{LikeButton}</li>
+		                    <li class="reblog_icon">{ReblogButton}</li>
+		                    <li class="notescount">
+		                        {block:NoteCount}
+		                            <a href="{Permalink}#notes">{NoteCountWithLabel}</a>
+		                        {/block:NoteCount}
+		                    </li>
+		                </ul>
+	                </div>
+	            {/block:Video}
+
+	            {block:Answer}
+	                <div id="post-{postID}" class="post post-answer" data-tags="{TagsAsClasses}">
+	                    <div class="question">
+	                        <img class="asker-avatar" src="{AskerPortraitURL-96}" alt="Asker Portrait"/>
+	                        <div class="asker">{Asker}</div>
+	                        <div class="asker-question">{Question}</div>
+	                    </div>
+
+	                    {block:Answerer}
+	                        <div class="answer">
+	                            <div class="answerer">{Answerer}</div>
+	                            <div class="answerer-answer">{Answer}</div>
+	                        </div>
+	                    {/block:Answerer}
+
+	                    <div class="replies">
+	                        {Replies}
+	                    </div>
+	                </div>
+	            
+		            <div class="bottom">    
+		               <ul class="like-reblog">
+		                    <li class="like_icon">{LikeButton}</li>
+		                    <li>{ReblogButton}</li>
+		                    <li class="notescount">
+		                        {block:NoteCount}
+		                            <a href="{Permalink}#notes">{NoteCountWithLabel}</a>
+		                        {/block:NoteCount}
+		                    </li>
+		                </ul>
+		            </div>
+	            {/block:Answer}
+	            
+	            
+	            {block:PostNotes}
+	                    <div id="notes">{PostNotes}</div>
+	            {/block:PostNotes}
+
+	        {/block:Posts}
+
+	        {block:PermalinkPagination}{/block:PermalinkPagination} 
+	    
+		    <div style="clear:both;"></div>
+		    
+		    <section class="section-pages">
+		        <div class="pagination">
+		            {block:Pagination}
+		                <div class="pagenav">
+		                    {block:PreviousPage}
+		                        <a href="{PreviousPage}">← Previous</a>
+		                    {/block:PreviousPage}
+		                    
+		                    {block:NextPage}
+		                        <a class="next" href="{NextPage}">Next →</a>
+		                    {/block:NextPage}
+		                </div>
+		            {/block:Pagination}
+		        </div>
+		        <div class="side_pagination"></div>
+		    </section>
+
+	    </div><!--content-->
+
+		<nav id="drops-spy" class="navbar">
+			<ul class="nav drops" role="tablist">
+				<li id="foot-link" class="drop nav-item">
+					<div class="drop-drop">
+						<a class="nav-link" href="#foot">
+							<div class="drop-title">
+								pages
+							</div>
+							<div class="drop-drop">
+								<i class="ss-icon ss-standard">plus</i>
+							</div>
+						</a>
+					</div>
+				</li>
+			</ul>
+		</nav>
+
+	{/block:PermalinkPage}
+
+	{block:TagPage}
+	        
+	    <div id=“content”>
+		    
+		    <div class="container page-container">
+		        {block:Posts}
+		    
+		            {block:Text}
+		                <div id="post-{postID}" class="post post-text" data-tags="{TagsAsClasses}">
+		                    {block:Title}
+		                        <h3>
+		                            <a href="{Permalink}">{Title}</a>
+		                        </h3>
+		                    {/block:Title}
+		                    <div class="body-text">{Body}</div>
+		                </div>
+		            {/block:Text}
+		            
+		            {block:Photo}
+		                <div id="post-{postID}" class="post post-photo" data-tags="{TagsAsClasses}">
+		                    {LinkOpenTag}
+		                        <img src="{PhotoURL-HighRes}" alt="Photo" />
+		                    {LinkCloseTag}
+
+		                    {block:Caption}
+		                        <p>{Caption}</p>
+		                    {/block:Caption}
+		                </div>
+		            {/block:Photo}
+
+		            {block:Panorama}
+		                <div id="post-{postID}" class="post panorama" data-tags="{TagsAsClasses}">
+		                    {LinkOpenTag}
+		                        <img src="{PhotoURL-Panorama}" alt="{PhotoAlt}"/>
+		                    {LinkCloseTag}{block:Caption}
+		                        <p>{Caption}</p>
+		                    {/block:Caption}
+		                </div>
+		            {/block:Panorama}
+
+		            {block:Photoset}
+		                 <div id="post-{postID}" class="post post-photoset" data-tags="{TagsAsClasses}">
+		                    {block:Photos}
+		                        <img src="{PhotoURL-HighRes}" alt="Photo" width="{PhotoWidth-700}" height="{PhotoHeight-700}" />
+		                    {/block:Photos}
+
+		                    {block:Caption}
+		                        <p>{Caption}</p>
+		                    {/block:Caption}
+		                </div>
+		            {/block:Photoset}
+
+		            {block:Quote}
+		                <div id="post-{postID}" class="post post-quote" data-tags="{TagsAsClasses}">
+		                    <h3 class="quote">{Quote}</h3>
+
+		                    {block:Source}
+		                        <cite class="source"> &mdash; {Source} </cite>
+		                    {/block:Source}
+		                </div>
+		            {/block:Quote}
+
+		            {block:Link}
+		                <div id="post-{postID}" class="post post-link" data-tags="{TagsAsClasses}">
+		                    <a class="link" href="{URL}" {Target}>{Name}</a>
+		                    {block:Description}
+		                        {Description}
+		                    {/block:Description}
+		                </div>
+		            {/block:Link}
+
+		            {block:Chat}
+		                <div id="post-{postID}" class="post post-chat" data-tags="{TagsAsClasses}">
+		                    <h3>{block:Title}{Title}{/block:Title}</h3>
+		                    <ul class="chat">
+		                        {block:Lines}
+		                            <li class="{Alt}">
+		                                <p>{block:Label}<strong>{Label}</strong>{/block:Label} {Line} </p>
+		                            </li>
+		                        {/block:Lines}
+		                    </ul>
+		                </div>
+		            {/block:Chat}
+
+		            {block:Audio}
+		                <div id="post-{postID}" class="post post-music" data-tags="{TagsAsClasses}">
+		                    {AudioPlayer}
+		                    <div class="body-text">{block:Caption}{Caption}{/block:Caption}</div>
+		                </div>
+		            {/block:Audio}
+
+		            {block:Video}
+		                <div id="post-{postID}" class="post post-video" data-tags="{TagsAsClasses}">
+		                    <div class="media">
+		                    	{Video-700}
+		                    </div>
+		                    {block:Caption}
+			                    <div class="tag-caption">
+			                    	{Caption}
+			                    </div>
+		                    {/block:Caption}
+		                </div>
+		            {/block:Video}
+
+		            {block:Answer}
+		                <div id="post-{postID}" class="post post-answer" data-tags="{TagsAsClasses}">
+		                    <div class="question">
+		                        <img class="asker-avatar" src="{AskerPortraitURL-96}" alt="Asker Portrait"/>
+		                        <div class="asker">{Asker}</div>
+		                        <div class="asker-question">{Question}</div>
+		                    </div>
+
+		                    {block:Answerer}
+		                        <div class="answer">
+		                            <div class="answerer">{Answerer}</div>
+		                            <div class="answerer-answer">{Answer}</div>
+		                        </div>
+		                    {/block:Answerer}
+
+		                    <div class="replies">
+		                        {Replies}
+		                    </div>
+		                </div>
+		            {/block:Answer}
+		            
+		            <div class="bottom">    
+		               <ul class="like-reblog">
+		                    <li class="like_icon">{LikeButton}</li>
+		                    <li>{ReblogButton}</li>
+		                    <li class="notescount">
+		                        {block:NoteCount}
+		                            <a href="{Permalink}#notes">{NoteCountWithLabel}</a>
+		                        {/block:NoteCount}
+		                    </li>
+		                </ul>
+		            </div>
+		            
+		            
+		            {block:PostNotes}
+		                    <div id="notes">{PostNotes}</div>
+		            {/block:PostNotes}
+
+		        {/block:Posts}
+
+		        {block:PermalinkPagination}{/block:PermalinkPagination} 
+		    </div>
+	    
+		    <div style="clear:both;"></div>
+		    
+		    <section class="section-pages">
+		        <div class="pagination">
+		            {block:Pagination}
+		                <div class="pagenav">
+		                    {block:PreviousPage}
+		                        <a href="{PreviousPage}">← Previous</a>
+		                    {/block:PreviousPage}
+		                    
+		                    {block:NextPage}
+		                        <a class="next" href="{NextPage}">Next →</a>
+		                    {/block:NextPage}
+		                </div>
+		            {/block:Pagination}
+		        </div>
+		        <div class="side_pagination"></div>
+		    </section>
+
+	    </div><!--content-->
+
+		<nav id="drops-spy" class="navbar">
+			<ul class="nav drops" role="tablist">
+				<li id="foot-link" class="drop nav-item">
+					<div class="drop-drop">
+						<a class="nav-link" href="#foot">
+							<div class="drop-title">
+								pages
+							</div>
+							<div class="drop-drop">
+								<i class="ss-icon ss-standard">plus</i>
+							</div>
+						</a>
+					</div>
+				</li>
+			</ul>
+		</nav>
+    
+    {/block:TagPage}
+    {block:SearchPage}
+
+    	<div id="content">
+	    	<div class="container page-container">
+	    		Posts about {SearchQuery}
+		        {block:Posts}
+		    
+		            {block:Text}
+		                <div id="post-{postID}" class="post post-text" data-tags="{TagsAsClasses}">
+		                    {block:Title}
+		                        <h3>
+		                            <a href="{Permalink}">{Title}</a>
+		                        </h3>
+		                    {/block:Title}
+		                    <div class="body-text">{Body}</div>
+		                </div>
+		            {/block:Text}
+		            
+		            {block:Photo}
+		                <div id="post-{postID}" class="post post-photo" data-tags="{TagsAsClasses}">
+		                    {LinkOpenTag}
+		                        <img src="{PhotoURL-HighRes}" alt="Photo" />
+		                    {LinkCloseTag}
+
+		                    {block:Caption}
+		                        <p>{Caption}</p>
+		                    {/block:Caption}
+		                </div>
+		            {/block:Photo}
+
+		            {block:Panorama}
+		                <div id="post-{postID}" class="post panorama" data-tags="{TagsAsClasses}">
+		                    {LinkOpenTag}
+		                        <img src="{PhotoURL-Panorama}" alt="{PhotoAlt}"/>
+		                    {LinkCloseTag}{block:Caption}
+		                        <p>{Caption}</p>
+		                    {/block:Caption}
+		                </div>
+		            {/block:Panorama}
+
+		            {block:Photoset}
+		                 <div id="post-{postID}" class="post post-photoset" data-tags="{TagsAsClasses}">
+		                    {block:Photos}
+		                        <img src="{PhotoURL-HighRes}" alt="Photo" width="{PhotoWidth-700}" height="{PhotoHeight-700}" />
+		                    {/block:Photos}
+
+		                    {block:Caption}
+		                        <p>{Caption}</p>
+		                    {/block:Caption}
+		                </div>
+		            {/block:Photoset}
+
+		            {block:Quote}
+		                <div id="post-{postID}" class="post post-quote" data-tags="{TagsAsClasses}">
+		                    <h3 class="quote">{Quote}</h3>
+
+		                    {block:Source}
+		                        <cite class="source"> &mdash; {Source} </cite>
+		                    {/block:Source}
+		                </div>
+		            {/block:Quote}
+
+		            {block:Link}
+		                <div id="post-{postID}" class="post post-link" data-tags="{TagsAsClasses}">
+		                    <a class="link" href="{URL}" {Target}>{Name}</a>
+		                    {block:Description}
+		                        {Description}
+		                    {/block:Description}
+		                </div>
+		            {/block:Link}
+
+		            {block:Chat}
+		                <div id="post-{postID}" class="post post-chat" data-tags="{TagsAsClasses}">
+		                    <h3>{block:Title}{Title}{/block:Title}</h3>
+		                    <ul class="chat">
+		                        {block:Lines}
+		                            <li class="{Alt}">
+		                                <p>{block:Label}<strong>{Label}</strong>{/block:Label} {Line} </p>
+		                            </li>
+		                        {/block:Lines}
+		                    </ul>
+		                </div>
+		            {/block:Chat}
+
+		            {block:Audio}
+		                <div id="post-{postID}" class="post post-music" data-tags="{TagsAsClasses}">
+		                    {AudioPlayer}
+		                    <div class="body-text">{block:Caption}{Caption}{/block:Caption}</div>
+		                </div>
+		            {/block:Audio}
+
+		            {block:Video}
+		                <div id="post-{postID}" class="post post-video" data-tags="{TagsAsClasses}">
+		                    <div class="media">{Video-700}</div>
+		                    {block:Caption}{Caption}{/block:Caption}
+		                </div>
+		            {/block:Video}
+
+		            {block:Answer}
+		                <div id="post-{postID}" class="post post-answer" data-tags="{TagsAsClasses}">
+		                    <div class="question">
+		                        <img class="asker-avatar" src="{AskerPortraitURL-96}" alt="Asker Portrait"/>
+		                        <div class="asker">{Asker}</div>
+		                        <div class="asker-question">{Question}</div>
+		                    </div>
+
+		                    {block:Answerer}
+		                        <div class="answer">
+		                            <div class="answerer">{Answerer}</div>
+		                            <div class="answerer-answer">{Answer}</div>
+		                        </div>
+		                    {/block:Answerer}
+
+		                    <div class="replies">
+		                        {Replies}
+		                    </div>
+		                </div>
+		            {/block:Answer}
+		            
+		            <div class="bottom">    
+		               <ul class="like-reblog">
+		                    <li class="like_icon">{LikeButton}</li>
+		                    <li>{ReblogButton}</li>
+		                    <li class="notescount">
+		                        {block:NoteCount}
+		                            <a href="{Permalink}#notes">{NoteCountWithLabel}</a>
+		                        {/block:NoteCount}
+		                    </li>
+		                </ul>
+		            </div>
+		            
+		            
+		            {block:PostNotes}
+		                    <div id="notes">{PostNotes}</div>
+		            {/block:PostNotes}
+
+		        {/block:Posts}
+
+		        {block:PermalinkPagination}{/block:PermalinkPagination} 
+		    </div>
+	    
+		    <div style="clear:both;"></div>
+		    
+		    <section class="section-pages">
+		        <div class="pagination">
+		            {block:Pagination}
+		                <div class="pagenav">
+		                    {block:PreviousPage}
+		                        <a href="{PreviousPage}">← Previous</a>
+		                    {/block:PreviousPage}
+		                    
+		                    {block:NextPage}
+		                        <a class="next" href="{NextPage}">Next →</a>
+		                    {/block:NextPage}
+		                </div>
+		            {/block:Pagination}
+		        </div>
+		        <div class="side_pagination"></div>
+		    </section>
+
+	    </div><!--content-->
+			</div>
+		</div>
+
+		<nav id="drops-spy" class="navbar">
+			<ul class="nav drops" role="tablist">
+				<li id="foot-link" class="drop nav-item">
+					<div class="drop-drop">
+						<a class="nav-link" href="#foot">
+							<div class="drop-title">
+								pages
+							</div>
+							<div class="drop-drop">
+								<i class="ss-icon ss-standard">plus</i>
+							</div>
+						</a>
+					</div>
+				</li>
+			</ul>
+		</nav>
+
+    {/block:SearchPage}
+
+	<div id="foot">
+
+		<div class="foot-container">
+
+			<div id="archives">
+
+				<div class="foot-title">
+					Pages
+				</div>
+
+				<div class="menu-archives-container">
+
+					<ul id="menu-archives" class="menu">
+						<li class="menu-item menu-item-featured">
+							<a href="/featured">/featured</a>
+						</li>
+						<li class="menu-item menu-item-music">
+							<a href="/music">/music</a>
+						</li>
+						<li class="menu-item menu-item-video">
+							<a href="/video">/video</a>
+						</li>
+						<li class="menu-item menu-item-characters">
+							<a href="/characters">/characters</a>
+						</li>
+						<li class="menu-item menu-item-photos">
+							<a href="/photos">/photos</a>
+						</li>
+						<li class="menu-item menu-item-social">
+							<a href="/social">/social</a>
+						</li>
+						<li class="menu-item">
+							<a href="/archive">/archive</a>
+						</li>
+					</ul>
+
+				</div>
+
+				<div class="search-button" data-toggle="modal" data-target="#searchModal">
+        			
+					<i class="ss-icon ss-standard">search</i>Search all
+				</div>
+
+			</div><!-- /archives -->
+		</div><!-- /foot-container -->
+	</div><!--/ .foot -->
+
+	<div class="search-modal modal fade" id="searchModal" tabindex="0" role="dialog" aria-labelledby="searchModal">
+		
+		<div class="search-modal modal-dialog" role="document">
+
+			<div class="search-x close" data-dismiss="modal">
+				<i class="ss-icon ss-standard">close</i>
+			</div>
+
+			<div class="tab-content tab-content-boxes">
+
+				<div class="footer-search">
+
+					<div class="search-instructions">
+						Search all
+					</div>
+
+					<form action="/search" role="search" method="get" id="searchform" class="searchform" autocomplete="off">
+
+				        <button class="ss-search" type="submit" id="searchsubmit" value="search"></button>
+				        <input type="text" name="q" id="s" value="{SearchQuery}"/>
+
+					</form>
+
+				</div>
+
+			</div>
+
+		</div>
+		
+	</div><!--/search-modal-->
+		
+    <script src="https://static.tumblr.com/cx0274f/9JWo6xodr/yt.js"></script>
+    </body>
+</html>

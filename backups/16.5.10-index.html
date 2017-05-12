@@ -1,0 +1,1089 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+ 		<meta charset="utf-8"/>
+        {block:Description}<meta name="description" content="{MetaDescription}" />{/block:Description}
+        <title>{Title} {block:PostTitle} {PostTitle} {/block:PostTitle}</title>
+        
+
+        
+        <link rel="shortcut icon" href="{Favicon}">
+        <link rel="alternate" type="application/rss+xml" href="{RSS}">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+        <link href="http://dolphinhood.github.io/a/webfonts/ss-social-regular.css" rel="stylesheet" />
+        <link href="http://dolphinhood.github.io/a/webfonts/ss-standard.css" rel="stylesheet" />
+
+        <!-- OPTIONS -->
+        <meta name="image:Header" content="0"/>
+        <meta name="text:Google Analytics ID" content=""/> 
+        
+        <!-- SOCIAL MEDIA -->
+        <meta name="text:Username on Facebook" content=""/>
+        <meta name="text:Username on Instagram" content="" />
+        <meta name="text:Username on Twitter" content="" />
+        <meta name="text:Username on YouTube" content="" />
+        
+        <!-- DEFAULT COLORS -->
+        <meta name="color:Background" content="#fff"/>
+        <meta name="color:Menu" content="#fff"/>
+        <meta name="color:Menu Text" content="#9B9B9B"/>
+        <meta name="color:Logo" content="#DADADA"/>
+        <meta name="color:Text" content="#333333"/>
+        <meta name="color:Secondary Text" content="#999999"/>
+        <meta name="color:Links" content="#FFAD36"/>
+        <meta name="color:Footer Border" content="#DAD6C8"/>
+        <meta name="color:Footer Logo" content="#DADADA"/>
+        
+        <!-- FONTS -->   
+        <link href='http://fonts.googleapis.com/css?family=Halant:300%7COpen+Sans:300,600' rel='stylesheet' type='text/css'>
+
+        <!-- SCRIPTS -->
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="http://static.tumblr.com/n0yswly/heun4cb6u/jquery.photoset-grid.js"></script>
+        <script type="text/javascript" src="http://static.tumblr.com/n0yswly/9gnn4e9nn/jquery.colorbox-min.js"></script>
+        
+        <!-- OPTIONS CSS -->
+        <style type="text/css">
+            body{
+                background-color: {color:Background}!important;
+            }
+            .page {
+                background-color: {color:Menu}!important;
+            }
+            .pagelist a{
+                color: {color:Menu Text}!important;
+            }
+            .container a{
+                color: {color:Logo}!important;
+            }
+            .post h3 a, .post h3{
+                color: {color:Text}!important;
+            }
+            .post p{
+                color: {color:Text}!important;
+            }
+            .post p a{
+                color: {color:Links}!important;
+            }
+            .post p a:hover{
+                border-bottom: 1px solid {color:Links}!important;
+            }
+            .action a{
+                color: {color:Links}!important;
+            }
+            .link{
+                color: {color:Links}!important;
+            }
+            .source{
+                color: {color:Secondary Text}!important;
+            }
+            .asker a{
+                color: {color:Links}!important;
+            }
+            .tweets{
+                color: {color:Secondary Text}!important;
+            }
+            .tweets a{
+                color: {color:Links}!important;
+            }
+            footer{
+                border-top: 1px solid{color:Footer Border}!important;
+            }
+            .ftitle{
+                color: {color:Footer Logo}!important;
+            }
+
+
+
+            {CustomCSS}
+        </style>
+        <script src="http://code.jquery.com/jquery-latest.js"></script>
+        <script src="http://static.tumblr.com/cx0274f/jXKo6xby3/tether.min.js"></script>
+        <script src="http://static.tumblr.com/cx0274f/F71o6xaz0/b.js"></script>
+        <script src="http://static.tumblr.com/cx0274f/jC7o6xbxo/c.js"></script>
+        <script src="https://www.youtube.com/iframe_api"></script>
+    </head>
+    <body data-spy="scroll" data-target="#drops-spy">
+    <div class="top">
+
+		<div class="top-button">
+			<div class="pufferfish" style="background-image: url('http://static.tumblr.com/cx0274f/Hkwo6xdfx/pufferfish.png');" data-toggle="modal" data-target="#menuModal"></div>
+		</div>
+
+	</div><!-- /top -->
+
+	<!-- Modal -->
+	<div class="info-modal modal fade" id="menuModal" tabindex="-1" role="dialog" aria-labelledby="menuModal">
+		
+		<div class="info-modal modal-dialog" role="document">
+
+			<div class="pufferfish-x close" data-dismiss="modal">
+				<i class="ss-icon ss-standard">close</i>
+			</div>
+
+			<!-- Nav tabs -->
+			<ul class="nav nav-tabs" role="tablist">
+				<li class="nav-item">
+					<a class="nav-profile nav-link active" href="#profile" role="tab" data-toggle="tab">profile</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-contact nav-link" href="#contact" role="tab" data-toggle="tab">contact</a>
+				</li>
+				<li class="nav-item nav-dark">
+					<a class="nav-credits nav-link" href="#credits" role="tab" data-toggle="tab">credits</a>
+				</li>
+			</ul>
+
+			<!-- Tab panes -->
+			<div class="tab-content">
+
+				<div class="tab-pane fade in active" id="profile">
+
+					<div class="profile">
+
+						<div class="profile-description">
+
+							<div class="profile-message">
+
+								<h3>
+									{block:Description}
+									    {Description}
+									{/block:Description}
+								</h3>
+
+							</div>
+
+							<div class="social-message">
+
+				                <div class="social-apple-info">
+				                    <h2>Stream the albums</h2>
+				                </div>
+
+				                <div class="social-soundcloud-info">
+				                    <h2>Hear all the old music</h2>
+				                </div>
+
+				                <div class="social-youtube-info">
+				                    <h2>See all the vids</h2>
+				                </div>
+
+				                <div class="social-instagram-info">
+				                    <h2>Going hard on Instagram rn</h2>
+				                </div>
+
+				                <div class="social-vine-info">
+				                    <h2>6 second loops</h2>
+				                </div>
+
+				                <div class="social-twitter-info">
+				                    <h2>News and stuff</h2>
+				                </div>
+
+				                <div class="social-phone-info">
+				                    <h2>(323) 834-2938</h2>
+				                </div>
+
+				                <div class="social-more-info">
+				                    <h2>All the other links</h2>
+				                </div>
+
+							</div>
+
+						</div>
+
+						<div class="social">
+							<a href="https://itunes.apple.com/us/artist/dolphinhood/id1106758555" class="link-apple" target="_blank">
+								<i class="ss-icon ss-social-regular">apple</i>
+							</a>
+							<a href="https://www.youtube.com/user/DolphinhoodVideos/videos" class="link-youtube" target="_blank">
+								<i class="ss-icon ss-social-regular">youtube</i>
+							</a>
+							<a href="https://instagram.com/dolphinhood" class="link-instagram" target="_blank">
+								<i class="ss-icon ss-social-regular">instagram</i>
+							</a>
+							<a href="https://vine.co/dolphinhood" class="link-vine" target="_blank">
+								<i class="ss-icon ss-social-regular">vine</i>
+							</a>
+							<a href="https://twitter.com/dolphinhood" class="link-twitter" target="_blank">
+								<i class="ss-icon ss-social-regular">twitter</i>
+							</a>
+							<a href="tel:323-834-2938" class="link-phone nav-link">
+								<i class="ss-icon ss-standard">iphone</i>
+							</a>
+							<a href="#social" class="link-more nav-link nav-dark" data-toggle="tab">
+								<i class="ss-icon ss-standard">grid</i>
+							</a>
+						</div>
+
+					</div><!-- .profile -->
+
+				</div><!-- #profile -->
+
+				<div class="tab-pane fade" id="contact">
+
+					<div class="contact">
+
+						<div class="contact-description">
+
+							<div class="contact-message">
+
+								<h3 class="contact-press">Press-<br>
+								<a href="#">dolphinhoodpress@gmail.com</a>
+								</h3>
+								<h3 class="contact-booking">Booking-<br>
+								<a href="#">dolphinhooshows@gmail.com</a>
+								</h3>
+								<h3 class="contact-collab">Collab-<br>
+								<a href="#">jgradywoodruffiv@gmail.com</a>
+								</h3>
+
+							</div>
+
+						</div>
+
+					</div>
+
+				</div><!-- #contact -->
+
+				<div class="tab-pane fade" id="credits">
+
+					<div class="credits">
+						<div class="credits-window">
+
+							<div class="credits-pad"></div>
+
+							<h2>Dolphinhood</h2>
+							<h4>a music cartoon</h4>
+
+							<div class="credits-title">
+								created by
+							</div>
+
+							<div class="credits-name">
+								<a href="http://gradywoodruff.com" target="_blank">
+									Grady Woodruff
+								</a>
+							</div>
+							<div class="credits-extra">
+								&amp;
+							</div>
+							<div class="credits-name">
+								<a href="https://instagram.com/matwoodruff" target="_blank">
+									Mat Woodruff
+								</a>
+							</div>
+
+							<div class="credits-title">
+								developed by
+							</div>
+
+							<div class="credits-name">
+								<a href="http://gradywoodruff.com" target="_blank">
+									Grady Woodruff
+								</a>
+							</div>
+							<div class="credits-name">
+								<a href="https://instagram.com/matwoodruff" target="_blank">
+									Mat Woodruff
+								</a>
+							</div>
+							<div class="credits-name">
+								<a href="#" target="_blank">
+									Jimmy Astro
+								</a>
+							</div>
+							<div class="credits-name">
+								<a href="#" target="_blank">
+									Suzie Iris Lee
+								</a>
+							</div>
+							<div class="credits-name">
+								<a href="#" target="_blank">
+									Matt Buechele
+								</a>
+							</div>
+							<div class="credits-name">
+								<a href="#" target="_blank">
+									Andreina Velazquez
+								</a>
+							</div>
+
+							<div class="credits-title">
+								starring
+							</div>
+							<div class="credits-name">
+								<a href="#" target="_blank">
+									Jimmy Astro
+								</a>
+							</div>
+							<div class="credits-character">
+								as Milo Davis
+							</div>
+
+							<div class="credits-title">
+								starring
+							</div>
+							<div class="credits-name">
+								<a href="#" target="_blank">
+									Suzie Iris Lee
+								</a>
+							</div>
+							<div class="credits-character">
+								as Suzie Octopussy
+							</div>
+
+							<div class="credits-title">
+								starring
+							</div>
+							<div class="credits-name">
+								<a href="#" target="_blank">
+									Matt Buechele
+								</a>
+							</div>
+							<div class="credits-character">
+								as James Cameron
+							</div>
+
+							<div class="credits-title">
+								starring
+							</div>
+							<div class="credits-name">
+								<a href="#" target="_blank">
+									Andreina Velazquez
+								</a>
+							</div>
+							<div class="credits-character">
+								as Princess Andreina
+							</div>
+
+							<div class="credits-title">
+								animation
+							</div>
+
+							<div class="credits-name">
+								<a href="http://gradywoodruff.com" target="_blank">
+									Grady Woodruff
+								</a>
+							</div>
+
+							<div class="credits-title">
+								sound design
+							</div>
+
+							<div class="credits-name">
+								<a href="http://gradywoodruff.com" target="_blank">
+									Grady Woodruff
+								</a>
+							</div>
+
+							<div class="credits-title">
+								web development
+							</div>
+
+							<div class="credits-name">
+								<a href="http://gradywoodruff.com" target="_blank">
+									Grady Woodruff
+								</a>
+							</div>
+
+
+							<h2>Mercury</h2>
+							<h4>the debut dolphinhood album</h4>
+
+							<div class="credits-title">
+								written by
+							</div>
+
+							<div class="credits-name">
+								<a href="#" target="_blank">
+									Jimmy Astro
+								</a>
+							</div>
+							<div class="credits-extra">
+								&amp;
+							</div>
+							<div class="credits-name">
+								<a href="http://gradywoodruff" target="_blank">
+									Grady Woodruff
+								</a>
+							</div>
+
+							<div class="credits-title">
+								lyrics by
+							</div>
+
+							<div class="credits-name">
+								<a href="#" target="_blank">
+									Jimmy Astro
+								</a>
+							</div>
+
+							<div class="credits-title">
+								produced by
+							</div>
+
+							<div class="credits-name">
+								<a href="#" target="_blank">
+									Grady Woodruff
+								</a>
+							</div>
+
+							<div class="credits-title">
+								engineering, mixing &amp; mastering
+							</div>
+
+							<div class="credits-name">
+								<a href="#" target="_blank">
+									Grady Woodruff
+								</a>
+							</div>
+
+							<div class="credits-title">
+								artwork by
+							</div>
+
+							<div class="credits-name">
+								<a href="http://gradywoodruff.com" target="_blank">
+									Grady Woodruff
+								</a>
+							</div>
+							<div class="credits-extra">
+								&amp;
+							</div>
+							<div class="credits-name">
+								<a href="https://instagram.com/suzieirislee" target="_blank">
+									Suzie Iris Lee
+								</a>
+							</div>
+
+							<div class="credits-title">
+								art direction
+							</div>
+
+							<div class="credits-name">
+								<a href="#" target="_blank">
+									Suzie Iris Lee
+								</a>
+							</div>
+
+
+							<div class="credits-pad2"></div>
+
+								<a href="http://dolphinhood.com/novelty">
+									<div class="pufferfish" style="background-image: url('http://static.tumblr.com/cx0274f/Hkwo6xdfx/pufferfish.png');"></div>
+								</a>
+
+							<div class="credits-pad2"></div>
+
+							<div id="log-0">
+							</div>
+						</div>
+					</div><!-- .credits -->
+
+				</div><!-- #credits -->
+
+				<div class="tab-pane fade" id="social">
+
+					<div class="social-container">
+						<div class="social-boxes">
+					        <a class="link-pinterest" href="https://pinterest.com/dolphinhood" target="_blank">
+					            <div class="mobile-social-box link-pinterest">
+					                <div class="url-name">
+					                    <i class="ss-icon ss-social-regular">pinterest</i>
+					                </div>
+					            </div>
+					        </a>
+					        <a class="link-youtube" href="https://www.youtube.com/user/DolphinhoodVideos/videos" target="_blank">
+					            <div class="mobile-social-box link-youtube">
+					                <div class="url-name">
+					                    <i class="ss-icon ss-social-regular">youtube</i>
+					                </div>
+					            </div>
+					        </a>
+					        <a class="link-googleplus" href="https://plus.google.com/103545249323322968933" target="_blank">
+					            <div class="mobile-social-box link-google">
+					                <div class="url-name">
+					                    <i class="ss-icon ss-social-regular">googleplus</i>
+					                </div>
+					            </div>
+					        </a>
+					        <a class="link-apple" href="https://itunes.apple.com/us/artist/dolphinhood/id1106758555" target="_blank">
+					            <div class="mobile-social-box link-apple">
+					                <div class="url-name">
+					                    <i class="ss-icon ss-social-regular">apple</i>
+					                </div>
+					            </div>
+					        </a>
+					        <a class="link-soundcloud" href="https://soundcloud.com/dolphinhood1" target="_blank">
+					            <div class="mobile-social-box link-soundcloud">
+					                <div class="url-name">
+					                    <i class="ss-icon ss-social-regular">soundcloud</i>
+					                </div>
+					            </div>
+					        </a>
+					        <a class="link-play" href="https://play.google.com/store/music/artist/Dolphinhood?id=A6opjozbcjx6yry7guq3klx4ml4" target="_blank">
+					            <div class="mobile-social-box link-play">
+					                <div class="url-name">
+					                    <i class="ss-icon ss-social-regular">googleplay</i>
+					                </div>
+					            </div>
+					        </a>
+					        <a class="link-spotify" href="https://play.spotify.com/artist/5q5iD4OfO8Q0UceFItwdu3" target="_blank">
+					            <div class="mobile-social-box link-spotify">
+					                <div class="url-name">
+					                    <i class="ss-icon ss-social-regular">spotify</i>
+					                </div>
+					            </div>
+					        </a>
+					        <a class="link-vine" href="https://vine.co/dolphinhood" target="_blank">
+					            <div class="mobile-social-box link-vine">
+					                <div class="url-name">
+					                    <i class="ss-icon ss-social-regular">vine</i>
+					                </div>
+					            </div>
+					        </a>
+					        <a class="link-twitter" href="https://twitter.com/dolphinhood" target="_blank">
+					            <div class="mobile-social-box link-twitter">
+					                <div class="url-name">
+					                    <i class="ss-icon ss-social-regular">twitter</i>
+					                </div>
+					            </div>
+					        </a>
+					        <a class="link-instagram" href="https://instagram.com/dolphinhood" target="_blank">
+					            <div class="mobile-social-box link-instagram">
+					                <div class="url-name">
+					                    <i class="ss-icon ss-social-regular">instagram</i>
+					                </div>
+					            </div>
+					        </a>
+					        <a class="link-facebook" href="https://www.facebook.com/dolphinhood" target="_blank">
+					            <div class="mobile-social-box link-facebook">
+					                <div class="url-name">
+					                    <i class="ss-icon ss-social-regular">facebook</i>
+					                </div>
+					            </div>
+					        </a>
+					        <a class="link-github" href="https://www.github.com/dolphinhood" target="_blank">
+					            <div class="mobile-social-box link-github">
+					                <div class="url-name">
+					                    <i class="ss-icon ss-social-regular">github</i>
+					                </div>
+					            </div>
+					        </a>
+					        <a class="link-phone" href="tel:323-834-2938" target="_blank">
+					            <div class="mobile-social-box link-phone">
+					                <div class="url-name">
+					                    <i class="ss-icon ss-standard">iphone</i>
+					                </div>
+					            </div>
+					        </a>
+						</div>
+					</div>
+				</div><!-- #social -->
+
+			</div><!-- content -->
+
+		</div><!--info-modal dialog-->
+
+	</div><!-- /info-modal -->	
+		
+<!-- tumblr paste -->	
+	{block:IndexPage}
+	<div class="drop-content">
+
+		<!-- modals -->
+		<!-- mercury-modals -->
+		<div class="drop-modal modal fade" id="mercuryModal1" tabindex="-1" role="dialog" aria-labelledby="mercuryModal1" style="background-color:#d69d64;">
+			
+			<div class="info-modal modal-dialog" role="document" style="background-color:#d69d64;">
+
+				<div class="drop-x close" data-dismiss="modal">
+					<i class="ss-icon ss-standard">close</i>
+				</div>
+
+					<div class="video-frame">
+						<div id="player" class="video-player" data-vid="SyH_nvoGoT0"></div>
+					</div>
+
+			</div>
+
+		</div>
+
+		<div class="drop-modal modal fade" id="mercuryModal2" tabindex="-1" role="dialog" aria-labelledby="mercuryModal2" style="background-color:#d69d64;">
+			
+			<div class="info-modal modal-dialog" role="document" style="background-color:#d69d64;">
+
+				<div class="drop-x close" data-dismiss="modal">
+					<i class="ss-icon ss-standard">close</i>
+				</div>
+
+			</div>
+
+		</div>
+
+		<!-- attention-modals -->
+		<div class="drop-modal modal fade" id="attentionModal1" tabindex="-1" role="dialog" aria-labelledby="attentionModal1" style="background-color:#FFD700;">
+			
+			<div class="info-modal modal-dialog" role="document" style="background-color:#FFD700;">
+
+				<div class="drop-x close" data-dismiss="modal">
+					<i class="ss-icon ss-standard">close</i>
+				</div>
+
+					<div class="video-frame">
+						<div id="player" class="video-player" data-vid="SyH_nvoGoT0"></div>
+					</div>
+
+			</div>
+
+		</div>
+
+		<div class="drop-modal modal fade" id="attentionModal2" tabindex="-1" role="dialog" aria-labelledby="attentionModal2" style="background-color:#FFD700;">
+			
+			<div class="info-modal modal-dialog" role="document" style="background-color:#FFD700;">
+
+				<div class="drop-x close" data-dismiss="modal">
+					<i class="ss-icon ss-standard">close</i>
+				</div>
+
+			</div>
+
+		</div>
+
+		<!-- content -->
+
+		<div id="mercury" class="post">
+
+			<div class="block" style="background-image:url('http://static.tumblr.com/cx0274f/vr0o6xhrr/mercury1.jpg');">
+
+			</div>
+
+			<div class="block" style="background-image:url('http://static.tumblr.com/cx0274f/sppo6xhs1/mercury2.jpg');">
+
+				<div class="drop_container-blurb_r">
+					
+		  			<div class="post-text v-c blurb_r">
+
+	  					Dolphinhood has been working on a new album
+
+							<a class="blurb-link" data-toggle="modal" data-target="#mercuryModal1">
+								click here
+							</a>
+
+					</div>
+
+				</div>
+
+			</div>
+
+			<div class="block" style="background-image:url('http://static.tumblr.com/cx0274f/SrWo6xhsk/mercury3.jpg');">
+
+			</div>
+
+			<div class="block" style="background-image:url('http://static.tumblr.com/cx0274f/Xofo6xhvw/mercury4.jpg');">
+
+				<div class="drop_container-blurb_c">
+					
+		  			<div class="post-text v-c blurb_c">
+
+		  				You can download the album here
+
+						<a href=" $$$ apple-link $$$ " target="_blank">
+							<i class="ss-icon ss-social-regular">apple</i>
+						</a>
+
+						<a href=" $$$ spotify-link $$$" target="_blank">
+							<i class="ss-icon ss-social-regular">spotify</i>
+						</a>
+
+						<a href=" $$$ soundcloud-link $$$" target="_blank">
+							<i class="ss-icon ss-social-regular">soundcloud</i>
+						</a>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</div><!--#mercury-->
+
+		<div id="attention" class="post">
+
+			<div class="block" style="background-image:url('http://static.tumblr.com/cx0274f/Yqeo6xid6/attention1.jpg');">
+
+			</div>
+
+			<div class="block" style="background-image:url('http://static.tumblr.com/cx0274f/h1Io6xidl/attention2.jpg');">
+
+				<div class="drop_container-blurb_r">
+					
+		  			<div class="post-text v-c blurb_r">
+
+	  					All I Ever Wanted Was Attention
+
+							<a class="blurb-link" data-toggle="modal" data-target="#attentionModal1">
+								click here
+							</a>
+
+					</div>
+
+				</div>
+
+			</div>
+
+			<div class="block" style="background-image:url('http://static.tumblr.com/cx0274f/xeYo6xidw/attention3.jpg');">
+
+			</div>
+
+		</div><!--#attention-->
+
+	</div><!-- /drop-content -->
+	{/block:IndexPage}
+
+<!-- / tumblr paste -->	
+
+	{block:PermalinkPage}
+	
+    <header>
+
+        <div class="page">
+            <div class="pagelist">
+                <ul>
+                    {block:HasPages}
+                    {block:Pages}
+                    <li><a href="{URL}">{Label}</a></li>
+                    {/block:Pages}
+                    {/block:HasPages}
+                </ul>
+            </div>
+        </div>
+    
+        <div class="container">
+            {block:IfHeaderImage}
+            <h1><img src="{image:Header}" alt="Logo" class="logo" /></h1>
+            {/block:IfHeaderImage}
+            {block:IfNotHeaderImage}
+            <h3><a href="{BlogURL}">{Title}</a></h3>
+            {/block:IfNotHeaderImage}
+        </div>
+
+    </header>
+        
+    <section class="main">
+        <div class="posts">
+            {block:Posts}
+        
+                {block:Text}
+                    <div class="post">
+                        {block:Title}
+                            <h3>
+                                <a href="{Permalink}">{Title}</a>
+                            </h3>
+                        {/block:Title}
+                        <div class="body-text">{Body}</div>
+                    </div>
+                {/block:Text}
+                
+                {block:Photo}
+                    <div class="post">
+                        {LinkOpenTag}
+                            <img src="{PhotoURL-HighRes}" alt="Photo" />
+                        {LinkCloseTag}
+
+                        {block:Caption}
+                            <p>{Caption}</p>
+                        {/block:Caption}
+                    </div>
+                {/block:Photo}
+
+                {block:Panorama}
+                    <div class="post panorama">
+                        {LinkOpenTag}
+                            <img src="{PhotoURL-Panorama}" alt="{PhotoAlt}"/>
+                        {LinkCloseTag}{block:Caption}
+                            <p>{Caption}</p>
+                        {/block:Caption}
+                    </div>
+                {/block:Panorama}
+    
+                {block:Photoset}
+                     <div class="post">
+                        {block:Photos}
+                            <img src="{PhotoURL-HighRes}" alt="Photo" width="{PhotoWidth-700}" height="{PhotoHeight-700}" />
+                        {/block:Photos}
+
+                        {block:Caption}
+                            <p>{Caption}</p>
+                        {/block:Caption}
+                    </div>
+                {/block:Photoset}
+    
+                {block:Quote}
+                    <div class="post">
+                        <h3 class="quote">{Quote}</h3>
+
+                        {block:Source}
+                            <cite class="source"> &mdash; {Source} </cite>
+                        {/block:Source}
+                    </div>
+                {/block:Quote}
+    
+                {block:Link}
+                    <div class="post">
+                        <a class="link" href="{URL}" {Target}>{Name}</a>
+                        {block:Description}
+                            {Description}
+                        {/block:Description}
+                    </div>
+                {/block:Link}
+    
+                {block:Chat}
+                    <div class="post">
+                        <h3>{block:Title}{Title}{/block:Title}</h3>
+                        <ul class="chat">
+                            {block:Lines}
+                                <li class="{Alt}">
+                                    <p>{block:Label}<strong>{Label}</strong>{/block:Label} {Line} </p>
+                                </li>
+                            {/block:Lines}
+                        </ul>
+                    </div>
+                {/block:Chat}
+    
+                {block:Audio}
+                    <div class="post">
+                        {AudioPlayer}
+                        <div class="body-text">{block:Caption}{Caption}{/block:Caption}</div>
+                    </div>
+                {/block:Audio}
+    
+                {block:Video}
+                    <div class="post">
+                        {Video-700}
+                        {block:Caption}{Caption}{/block:Caption}
+                    </div>
+                {/block:Video}
+
+                {block:Answer}
+                    <div class="post">
+                        <div class="question">
+                            <img class="asker-avatar" src="{AskerPortraitURL-96}" alt="Asker Portrait"/>
+                            <div class="asker">{Asker}</div>
+                            <div class="asker-question">{Question}</div>
+                        </div>
+
+                        {block:Answerer}
+                            <div class="answer">
+                                <div class="answerer">{Answerer}</div>
+                                <div class="answerer-answer">{Answer}</div>
+                            </div>
+                        {/block:Answerer}
+
+                        <div class="replies">
+                            {Replies}
+                        </div>
+                    </div>
+                {/block:Answer}
+                
+                <div class="bottom">    
+                   <ul class="like-reblog">
+                        <li class="like_icon">{LikeButton}</li>
+                        <li>{ReblogButton}</li>
+                        <li class="notescount">
+                            {block:NoteCount}
+                                <a href="{Permalink}#notes">{NoteCountWithLabel}</a>
+                            {/block:NoteCount}
+                        </li>
+                        <li class="date">
+                            <span>{block:Date}
+                                <a href="{Permalink}">
+                                    <time datetime="{Year}-{MonthNumberWithZero}-{DayOfMonthWithZero}">{DayOfMonth} {Month} {Year}</time>
+                                </a>{/block:Date}
+                            </span>
+                            <br/>
+                            <span class="hashtag">
+                                {block:HasTags}{block:Tags}
+                                    <a href="{TagURL}">#{Tag}</a>
+                                {/block:Tags}{/block:HasTags}
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+                
+                
+                {block:PostNotes}
+                        <div id="notes">{PostNotes}</div>
+                {/block:PostNotes}
+
+            {/block:Posts}
+    
+            {block:PermalinkPagination}{/block:PermalinkPagination} 
+        </div>
+    </section>
+    
+    <div style="clear:both;"></div>
+    
+    <section class="section-pages">
+        <div class="pagination">
+            {block:Pagination}
+                <div class="pagenav">
+                    {block:PreviousPage}
+                        <a href="{PreviousPage}">← Previous</a>
+                    {/block:PreviousPage}
+                    
+                    {block:NextPage}
+                        <a class="next" href="{NextPage}">Next →</a>
+                    {/block:NextPage}
+                </div>
+            {/block:Pagination}
+        </div>
+        <div class="side_pagination"></div>
+    </section>
+    
+    {/block:PermalinkPage}
+
+	<div id="foot">
+
+		<div class="foot-container">
+
+			<nav id="drops-spy" class="navbar">
+				<ul class="nav drops" role="tablist">
+
+					<li id="mercury-link" class="drop nav-item">
+						<a class="nav-link" href="#mercury">
+							<div class="drop-title drop-white">
+								Mercury
+							</div>
+							<div class="drop-title" style="color:#d69d64;">
+								Mercury
+							</div>
+							<div class="drop-drop">
+								<i class="ss-icon ss-standard drop-white" style="color:#fff">drop</i>
+								<i class="ss-icon ss-standard" style="color:#d69d64;">drop</i>
+							</div>
+						</a>
+					</li>
+					<li id="attention-link" class="drop nav-item">
+						<a class="nav-link" href="#attention">
+							<div class="drop-title drop-white">
+								Attention
+							</div>
+							<div class="drop-title" style="color:#FFD700;">
+								Attention
+							</div>
+							<div class="drop-drop">
+								<i class="ss-icon ss-standard drop-white" style="color:#fff">drop</i>
+								<i class="ss-icon ss-standard" style="color:#FFD700;">drop</i>
+							</div>
+						</a>
+					</li>
+
+					<li id="foot-link" class="drop nav-item">
+						<div class="drop-drop">
+							<a class="nav-link" href="#foot">
+								<div class="drop-title">
+									archives
+								</div>
+								<div class="drop-drop">
+									<i class="ss-icon ss-standard">plus</i>
+								</div>
+							</a>
+						</div>
+					</li>
+
+				</ul> <!--/ .drops -->
+			</nav>
+
+			<div id="archives">
+
+				<div class="foot-title">
+					Archives
+				</div>
+
+				<div class="menu-archives-container">
+
+					<ul id="menu-archives" class="menu">
+						<li class="menu-item">
+							<a href="/archive">/all</a>
+						</li>
+						<li class="menu-item">
+							<a href="/music">/music</a>
+						</li>
+						<li class="menu-item">
+							<a href="/videos">/videos</a>
+						</li>
+						<li class="menu-item">
+							<a href="/social">/social</a>
+						</li>
+					</ul>
+
+				</div>
+
+				<div class="search-button" data-toggle="modal" data-target="#searchModal">
+        			
+					<i class="ss-icon ss-standard">search</i>Search all
+				</div>
+
+			</div><!-- /archives -->
+		</div><!-- /foot-container -->
+	</div><!--/ .foot -->
+
+	<div class="search-modal modal fade" id="searchModal" tabindex="0" role="dialog" aria-labelledby="searchModal">
+		
+		<div class="search-modal modal-dialog" role="document">
+
+			<div class="search-x close" data-dismiss="modal">
+				<i class="ss-icon ss-standard">close</i>
+			</div>
+
+			<div class="tab-content">
+
+				<div class="footer-search">
+
+					<div class="search-instructions">
+						Search all
+					</div>
+
+					<form action="/search" role="search" method="get" id="searchform" class="searchform" autocomplete="off">
+
+				        <button class="ss-search" type="submit" id="searchsubmit" value="search"></button>
+				        <input type="text" name="q" id="s" value="{SearchQuery}"/>
+
+					</form>
+
+				</div>
+
+			</div>
+
+		</div>
+		
+	</div><!--/search-modal-->
+
+	<div id="bubbles">
+        	<div class="bubble x1"><div class="crescent"></div></div>
+	        <div class="bubble x2"><div class="crescent"></div></div>
+	        <div class="bubble x3"><div class="crescent"></div></div>
+	        <div class="bubble x4"><div class="crescent"></div></div>
+	        <div class="bubble x5"><div class="crescent"></div></div>
+        	<div class="bubble x6"><div class="crescent"></div></div>
+	        <div class="bubble x7"><div class="crescent"></div></div>
+	        <div class="bubble x8"><div class="crescent"></div></div>
+	        <div class="bubble x9"><div class="crescent"></div></div>
+	        <div class="bubble x10"><div class="crescent"></div></div>
+        	<div class="bubble x11"><div class="crescent"></div></div>
+	        <div class="bubble x12"><div class="crescent"></div></div>
+	        <div class="bubble x13"><div class="crescent"></div></div>
+	        <div class="bubble x14"><div class="crescent"></div></div>
+	        <div class="bubble x15"><div class="crescent"></div></div>
+        	<div class="bubble x16"><div class="crescent"></div></div>
+	        <div class="bubble x17"><div class="crescent"></div></div>
+	        <div class="bubble x18"><div class="crescent"></div></div>
+	</div>
+		
+    <script src="http://static.tumblr.com/cx0274f/9JWo6xodr/yt.js"></script>
+    </body>
+</html>
